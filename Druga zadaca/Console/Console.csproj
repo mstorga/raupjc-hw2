@@ -65,6 +65,10 @@
       <Project>{a035d654-0799-47cc-b940-353f85c9b080}</Project>
       <Name>Prvi zadatak</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Sesti i sedmi zadatak\Sesti i sedmi zadatak.csproj">
+      <Project>{58800616-df36-4386-99cf-6efee3299d9c}</Project>
+      <Name>Sesti i sedmi zadatak</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

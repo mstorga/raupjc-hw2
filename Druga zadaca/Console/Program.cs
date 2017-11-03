@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Prvi_zadatak;
 using Drugi_zadatak;
 using Cetvrti_zadatak;
+using Sesti_i_sedmi_zadatak;
 
 namespace Console
 {
@@ -68,14 +69,17 @@ namespace Console
             //System.Console.WriteLine("Bag length should be 100000. Length is {0}",
             //    results.Count);
 
-            ConcurrentBag<int> iterations = new ConcurrentBag<int>();
-            Parallel.For(0, 100000, (i) =>
-            {
-                Thread.Sleep(1);
-                iterations.Add(i);
-            }) ;
-            System.Console.WriteLine("Bag length should be 100000. Length is {0}",
-                iterations.Count);
+            //ConcurrentBag<int> iterations = new ConcurrentBag<int>();
+            //Parallel.For(0, 100000, (i) =>
+            //{
+            //    Thread.Sleep(1);
+            //    iterations.Add(i);
+            //}) ;
+            //System.Console.WriteLine("Bag length should be 100000. Length is {0}",
+            //    iterations.Count);
+
+            var t = Task.Run(() => Class1.LetsSayUserClickedAButtonOnGuiMethod());
+            System.Console.Read();
         }
 
         public static void LongOperation(string taskName)
